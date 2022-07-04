@@ -4,7 +4,7 @@ from PIL import Image
 
 # Model
 #model = torch.hub.load("ultralytics/yolov5", "yolov5s", pretrained=True, force_reload=True)
-model = torch.hub.load("ultralytics/yolov5", "custom", path = "./best_damage.pt", force_reload=True)
+model = torch.hub.load("ultralytics/yolov5", "custom", path = r"C:\Users\DELL\Desktop\aditi\datasets\today\best.pt", force_reload=True)
 
 # img = Image.open("zidane.jpg")  # PIL image direct open
 

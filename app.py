@@ -17,12 +17,16 @@ app = Flask(__name__)
 
 #'''
 # Load Pre-trained Model
-model = torch.hub.load(
-        "ultralytics/yolov5", "yolov5s", pretrained=True, force_reload=True
-        )#.autoshape()  # force_reload = recache latest code
+# model = torch.hub.load(
+#         "ultralytics/yolov5", "yolov5s", pretrained=True, force_reload=True
+#         )
+# model = torch.hub.load(
+#         "ultralytics/yolov5", "yolov5s", pretrained=True, force_reload=True
+#         )
+        #.autoshape()  # force_reload = recache latest code
 #'''
 # Load Custom Model
-#model = torch.hub.load("ultralytics/yolov5", "custom", path = "./best_damage.pt", force_reload=True)
+model = torch.hub.load("ultralytics/yolov5", "custom", path = r"C:\Users\DELL\Desktop\aditi\datasets\today\best.pt", force_reload=True)
 
 # Set Model Settings
 model.eval()
